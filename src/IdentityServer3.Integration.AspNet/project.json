@@ -1,10 +1,11 @@
 ﻿{
-  "version": "1.0.0-beta1",
+  "version": "1.0.0-beta2",
   "description": "IdentityServer3 Integration Library for ASP.NET 5",
   "authors": [ "Dominick Baier & Brock Allen" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
+  "iconUrl": "https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg",
+  "tags": [ "IdentityServer", "OpenID Connect", "OpenIDConnect", "OAuth2", "OWIN", "ASP.NET", "Katana", "WebApi", "SSO", "Federation", "Claims", "Identity" ],
+  "projectUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNet",
+  "licenseUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNet/blob/master/LICENSE",
 
   "frameworks": {
     "dnx451": {
