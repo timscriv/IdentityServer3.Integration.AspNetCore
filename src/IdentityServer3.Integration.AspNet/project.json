@@ -1,5 +1,5 @@
 ﻿{
-  "version": "1.0.0-beta8",
+  "version": "1.0.0-rc1",
   "description": "IdentityServer3 Integration Library for ASP.NET 5",
   "authors": [ "Dominick Baier & Brock Allen" ],
   "iconUrl": "https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg",
