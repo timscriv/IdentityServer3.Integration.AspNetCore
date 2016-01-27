@@ -19,7 +19,7 @@ namespace Microsoft.AspNet.Builder
                 addToPipeline(next =>
                 {
                     var builder = new Microsoft.Owin.Builder.AppBuilder();
-                    var provider = app.ApplicationServices.GetService<DataProtection.IDataProtectionProvider>();
+                    var provider = app.ApplicationServices.GetRequiredService<DataProtection.IDataProtectionProvider>();
 
                     builder.Properties["security.DataProtectionProvider"] = new DataProtectionProviderDelegate(purposes =>
                     {
