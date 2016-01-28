@@ -1,4 +1,4 @@
-# IdentityServer3 Integration Library for ASP.NET 5
+# IdentityServer3 Integration Library for ASP.NET Core
 
 Data protection must be enabled for your ASP.NET 5 application to use this library. Example:
 
