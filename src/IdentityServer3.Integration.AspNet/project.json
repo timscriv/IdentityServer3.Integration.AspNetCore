@@ -1,19 +1,20 @@
 ﻿{
-  "version": "1.0.0-rc1",
-  "description": "IdentityServer3 Integration Library for ASP.NET 5",
+  "version": "1.0.0-rc2",
+  "description": "IdentityServer3 Integration Library for ASP.NET Core",
   "authors": [ "Dominick Baier & Brock Allen" ],
-  "iconUrl": "https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg",
-  "tags": [ "IdentityServer", "OpenID Connect", "OpenIDConnect", "OAuth2", "OWIN", "ASP.NET", "Katana", "WebApi", "SSO", "Federation", "Claims", "Identity" ],
-  "projectUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNet",
-  "licenseUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNet/blob/master/LICENSE",
-
+  "packOptions": {
+    "iconUrl": "https://identityserver.github.io/Documentation/assets/images/icons/IDserver_icon128.jpg",
+    "tags": [ "IdentityServer", "OpenID Connect", "OpenIDConnect", "OAuth2", "OWIN", "ASP.NET", "Katana", "WebApi", "SSO", "Federation", "Claims", "Identity" ],
+    "projectUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNetCore",
+    "licenseUrl": "https://github.com/IdentityServer/IdentityServer3.Integration.AspNetCore/blob/master/LICENSE"
+  },
   "frameworks": {
-    "dnx451": {
+    "net451": {
       "dependencies": {
         "IdentityServer3": "2.1.1",
         "Microsoft.Owin": "3.0.1",
-        "Microsoft.AspNet.DataProtection": "1.0.0-rc1-final",
-        "Microsoft.AspNet.Owin": "1.0.0-rc1-final"
+        "Microsoft.AspNetCore.DataProtection": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.Owin": "1.0.0-rc2-final"
       }
     }
   }
