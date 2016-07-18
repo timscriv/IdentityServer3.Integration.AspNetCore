@@ -7,6 +7,7 @@ using Owin;
 
 namespace Microsoft.AspNetCore.Builder
 {
+    using IdentityServer3.Integration.AspNetCore;
     using DataProtectionProviderDelegate = Func<string[], Tuple<Func<byte[], byte[]>, Func<byte[], byte[]>>>;
     using DataProtectionTuple = Tuple<Func<byte[], byte[]>, Func<byte[], byte[]>>;
 
@@ -26,6 +27,8 @@ namespace Microsoft.AspNetCore.Builder
                         var dataProtection = provider.CreateProtector(String.Join(",", purposes));
                         return new DataProtectionTuple(dataProtection.Protect, dataProtection.Unprotect);
                     });
+
+                    builder.Use<CopyInputStream>();
 
                     builder.UseIdentityServer(options);
 
